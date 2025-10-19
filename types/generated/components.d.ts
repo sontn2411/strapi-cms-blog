@@ -62,6 +62,17 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedThumail extends Struct.ComponentSchema {
+  collectionName: 'components_shared_thumails';
+  info: {
+    displayName: 'Thumail';
+    icon: 'picture';
+  };
+  attributes: {
+    thumbnail: Schema.Attribute.Media<'images' | 'files'>;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -70,6 +81,7 @@ declare module '@strapi/strapi' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'shared.thumail': SharedThumail;
     }
   }
 }

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_thumails",
+  "info": {
+    "displayName": "Thumail",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  },
+  "config": {}
+}
