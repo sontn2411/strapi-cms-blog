@@ -20,6 +20,22 @@ export default {
         'Auth.form.email.placeholder': 'e.g, son.tran@sweetsoft.vn',
       },
     },
+
+    theme: {
+      light: {
+        colors: {
+          primary100: '#f6ecfc',
+          primary200: '#e0c1f4',
+          primary500: '#452189', //mau chinh
+          buttonPrimary500: '#7b79ff', // Màu nền chính của button
+          buttonNeutral0: '#ffffff', // Màu chữ hoặc nền phụ của button
+          primary600: '#452189',
+          primary700: '#8312d1',
+          danger700: '#b72b1a',
+        },
+      },
+      dark: {},
+    },
     locales: [
       // 'ar',
       // 'fr',
