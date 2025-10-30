@@ -38,6 +38,17 @@ export default [
   'strapi::query',
   'strapi::body',
   'strapi::session',
-  'strapi::favicon',
-  'strapi::public',
+  {
+    name: 'strapi::favicon',
+    config: {
+      path: './public/uploads/favicon.ico',
+    },
+  },
+  // 'strapi::public',
+  {
+    name: 'strapi::public',
+    config: {
+      path: './public',
+    },
+  },
 ]
