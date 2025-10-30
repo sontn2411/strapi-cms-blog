@@ -19,6 +19,7 @@ export default {
         'Auth.form.welcome.title': 'Welcome to SweetSoft',
         'Auth.form.welcome.subtitle': 'Log in to your SweetSoft account',
         'Auth.form.email.placeholder': 'e.g, son.tran@sweetsoft.vn',
+
         // 'HomePage.head.title': '',
       },
     },
@@ -81,6 +82,13 @@ export default {
     ],
   },
   bootstrap(app: StrapiApp) {
-    console.log(app)
+    app
+      .getPlugin('content-manager')
+      .injectComponent('editView', 'right-links', {
+        name: 'MyCustomButton',
+        Component: () => (
+          <button onClick={() => alert('Clicked!')}>My Button</button>
+        ),
+      })
   },
 }
