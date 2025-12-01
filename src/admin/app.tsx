@@ -18,7 +18,7 @@ export default {
       en: {
         'Auth.form.welcome.title': 'Welcome to site admin ',
         'Auth.form.welcome.subtitle': 'Log in to your admin account',
-        'Auth.form.email.placeholder': 'e.g, dev123@gmail.com',
+        'Auth.form.email.placeholder': 'e.g, dev123@gmail.com/Dev@1234',
 
         // 'HomePage.head.title': '',
       },
@@ -82,13 +82,13 @@ export default {
     ],
   },
   bootstrap(app: StrapiApp) {
-    app
-      .getPlugin('content-manager')
-      .injectComponent('editView', 'right-links', {
-        name: 'MyCustomButton',
-        Component: () => (
-          <button onClick={() => alert('Clicked!')}>My Button</button>
-        ),
-      })
+    // app
+    //   .getPlugin('content-manager')
+    //   .injectComponent('editView', 'right-links', {
+    //     name: 'MyCustomButton',
+    //     Component: () => (
+    //       <button onClick={() => alert('Clicked!')}>My Button</button>
+    //     ),
+    //   })
   },
 }
