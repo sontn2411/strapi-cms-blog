@@ -1,5 +1,17 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface SharedContactInfo extends Struct.ComponentSchema {
+  collectionName: 'components_shared_contact_infos';
+  info: {
+    displayName: 'ContactInfo';
+  };
+  attributes: {
+    address: Schema.Attribute.String;
+    email: Schema.Attribute.Email;
+    phone: Schema.Attribute.String;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -76,6 +88,7 @@ export interface SharedThumail extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'shared.contact-info': SharedContactInfo;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;

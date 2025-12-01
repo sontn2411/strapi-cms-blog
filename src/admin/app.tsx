@@ -1,6 +1,6 @@
 import type { StrapiApp } from '@strapi/strapi/admin'
-import logo from './extensions/logo.svg'
-import favicon from './extensions/favicon.ico'
+import logo from './extensions/logo2.png'
+import favicon from './extensions/favicon.png'
 
 export default {
   config: {
@@ -16,9 +16,9 @@ export default {
     },
     translations: {
       en: {
-        'Auth.form.welcome.title': 'Welcome to SweetSoft',
-        'Auth.form.welcome.subtitle': 'Log in to your SweetSoft account',
-        'Auth.form.email.placeholder': 'e.g, son.tran@sweetsoft.vn',
+        'Auth.form.welcome.title': 'Welcome to site admin ',
+        'Auth.form.welcome.subtitle': 'Log in to your admin account',
+        'Auth.form.email.placeholder': 'e.g, dev123@gmail.com',
 
         // 'HomePage.head.title': '',
       },
